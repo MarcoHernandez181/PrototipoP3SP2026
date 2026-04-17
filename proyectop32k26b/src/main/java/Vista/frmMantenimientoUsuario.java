@@ -60,13 +60,13 @@ int codigoAplicacion=10;
         for (int i = 0; i < listaUsuarios.size(); i++) {
             dato[0] = Integer.toString(listaUsuarios.get(i).getUsuId());
             dato[1] = listaUsuarios.get(i).getUsuNombre();
-            dato[2] = listaUsuarios.get(i).getUsuContrasena();
-            dato[3] = listaUsuarios.get(i).getUsuUltimaSesion();
+           // dato[2] = listaUsuarios.get(i).getUsuContrasena();
+           // dato[3] = listaUsuarios.get(i).getUsuUltimaSesion();
             dato[4] = listaUsuarios.get(i).getUsuEstatus();
-            dato[5] = listaUsuarios.get(i).getUsuNombreReal();
-            dato[6] = listaUsuarios.get(i).getUsuCorreo();
-            dato[7] = listaUsuarios.get(i).getUsuTelefono();
-            dato[8] = listaUsuarios.get(i).getUsuDireccion();
+           // dato[5] = listaUsuarios.get(i).getUsuNombreReal();
+           // dato[6] = listaUsuarios.get(i).getUsuCorreo();
+           // dato[7] = listaUsuarios.get(i).getUsuTelefono();
+           // dato[8] = listaUsuarios.get(i).getUsuDireccion();
             
             modelo.addRow(dato);
         }       
@@ -106,23 +106,12 @@ int codigoAplicacion=10;
         jButton2 = new javax.swing.JButton();
         label4 = new javax.swing.JLabel();
         btnActualizar = new javax.swing.JButton();
-        txtUltimaSesion = new javax.swing.JTextField();
-        label6 = new javax.swing.JLabel();
-        txtNombreReal = new javax.swing.JTextField();
-        label8 = new javax.swing.JLabel();
         label9 = new javax.swing.JLabel();
         txtEstatus = new javax.swing.JTextField();
-        txtTelefono = new javax.swing.JTextField();
-        label10 = new javax.swing.JLabel();
-        label11 = new javax.swing.JLabel();
-        txtCorreo = new javax.swing.JTextField();
-        label13 = new javax.swing.JLabel();
-        txtDireccion = new javax.swing.JTextField();
         txtConfContraseña = new javax.swing.JTextField();
         label7 = new javax.swing.JLabel();
         btnReportes = new javax.swing.JButton();
 
-        lb2.setForeground(new java.awt.Color(204, 204, 204));
         lb2.setText(".");
 
         setClosable(true);
@@ -201,7 +190,6 @@ int codigoAplicacion=10;
         label5.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         label5.setText("Contraseña");
 
-        lb.setForeground(new java.awt.Color(204, 204, 204));
         lb.setText(".");
 
         jButton2.setText("Ayuda");
@@ -221,41 +209,11 @@ int codigoAplicacion=10;
             }
         });
 
-        txtUltimaSesion.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtUltimaSesion.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        label6.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label6.setText("Ultima Sesion");
-
-        txtNombreReal.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtNombreReal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        label8.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label8.setText("Nombre Real");
-
         label9.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         label9.setText("Estatus");
 
         txtEstatus.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         txtEstatus.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        txtTelefono.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtTelefono.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        label10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label10.setText("Telefono");
-
-        label11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label11.setText("Correo");
-
-        txtCorreo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtCorreo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        label13.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label13.setText("Direccion");
-
-        txtDireccion.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtDireccion.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
 
         txtConfContraseña.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         txtConfContraseña.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
@@ -276,6 +234,11 @@ int codigoAplicacion=10;
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(label9)
+                        .addGap(69, 69, 69)
+                        .addComponent(txtEstatus, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(380, 380, 380)
                         .addComponent(lb, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -316,37 +279,7 @@ int codigoAplicacion=10;
                                 .addGap(29, 29, 29)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtContrasena, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                                    .addComponent(txtNombre)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(label6)
-                                .addGap(29, 29, 29)
-                                .addComponent(txtUltimaSesion)
-                                .addGap(2, 2, 2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(label9)
-                                    .addComponent(label8))
-                                .addGap(29, 29, 29)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtEstatus, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                                    .addComponent(txtNombreReal)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(label11)
-                                    .addComponent(label10))
-                                .addGap(57, 57, 57)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                                        .addGap(2, 2, 2))
-                                    .addComponent(txtTelefono)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(label13)
-                                .addGap(49, 49, 49)
-                                .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(txtNombre))))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -356,7 +289,7 @@ int codigoAplicacion=10;
                         .addComponent(label1)
                         .addGap(294, 585, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 624, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE)
                         .addContainerGap())))
         );
         layout.setVerticalGroup(
@@ -379,30 +312,10 @@ int codigoAplicacion=10;
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtConfContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label7))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label6)
-                            .addComponent(txtUltimaSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(label9)
                             .addComponent(txtEstatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label8)
-                            .addComponent(txtNombreReal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label11)
-                            .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label10)
-                            .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label13)
-                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnRegistrar)
@@ -457,12 +370,12 @@ int codigoAplicacion=10;
                     
             //Agregando codificado de contraseña = Anthony Avalos 
             //usuario.setContrasenaUsuario(txtContrasena.getText());
-            usuario.setUsuUltimaSesion(txtUltimaSesion.getText());
+         //   usuario.setUsuUltimaSesion(txtUltimaSesion.getText());
             usuario.setUsuEstatus(txtEstatus.getText());
-            usuario.setUsuNombreReal(txtNombreReal.getText());
-            usuario.setUsuCorreo(txtCorreo.getText());
-            usuario.setUsuTelefono(txtTelefono.getText());
-            usuario.setUsuDireccion(txtDireccion.getText());
+         //   usuario.setUsuNombreReal(txtNombreReal.getText());
+        //    usuario.setUsuCorreo(txtCorreo.getText());
+      //      usuario.setUsuTelefono(txtTelefono.getText());
+         //   usuario.setUsuDireccion(txtDireccion.getText());
             
             usuario.setIngresarUsuario(usuario);
             JOptionPane.showMessageDialog(null, "Registro Ingresado\n", 
@@ -492,12 +405,12 @@ int codigoAplicacion=10;
         System.out.println("Usuario retornado:" + usuario);        
         txtNombre.setText(usuario.getUsuNombre());
         txtContrasena.setText(c.decode(usuario.getUsuContrasena()));
-        txtUltimaSesion.setText(usuario.getUsuUltimaSesion());
+     //   txtUltimaSesion.setText(usuario.getUsuUltimaSesion());
         txtEstatus.setText(usuario.getUsuEstatus());
-        txtNombreReal.setText(usuario.getUsuNombreReal());
-        txtCorreo.setText(usuario.getUsuCorreo());
-        txtTelefono.setText(usuario.getUsuTelefono());
-        txtDireccion.setText(usuario.getUsuDireccion());
+    //    txtNombreReal.setText(usuario.getUsuNombreReal());
+   //     txtCorreo.setText(usuario.getUsuCorreo());
+   //     txtTelefono.setText(usuario.getUsuTelefono());
+      //  txtDireccion.setText(usuario.getUsuDireccion());
         
         
         
@@ -514,12 +427,12 @@ int codigoAplicacion=10;
         
         //agregando codificado de contraseña modificar = Anthony Avalos
         //usuario.setContrasenaUsuario(txtContrasena.getText());
-        usuario.setUsuUltimaSesion(txtUltimaSesion.getText());
+ //       usuario.setUsuUltimaSesion(txtUltimaSesion.getText());
         usuario.setUsuEstatus(txtEstatus.getText());
-        usuario.setUsuNombreReal(txtNombreReal.getText());
-        usuario.setUsuCorreo(txtCorreo.getText());
-        usuario.setUsuTelefono(txtTelefono.getText());
-        usuario.setUsuDireccion(txtDireccion.getText());
+    //    usuario.setUsuNombreReal(txtNombreReal.getText());
+    //    usuario.setUsuCorreo(txtCorreo.getText());
+    //    usuario.setUsuTelefono(txtTelefono.getText());
+    //    usuario.setUsuDireccion(txtDireccion.getText());
         
         usuario.setModificarUsuario(usuario);
         JOptionPane.showMessageDialog(null, "Registro Modificado\n", 
@@ -544,12 +457,12 @@ int codigoAplicacion=10;
         txtNombre.setText("");
         txtContrasena.setText("");
         txtbuscado.setText("");
-        txtUltimaSesion.setText("");
+   //     txtUltimaSesion.setText("");
         txtEstatus.setText("");
-        txtNombreReal.setText("");
-        txtCorreo.setText("");
-        txtTelefono.setText("");
-        txtDireccion.setText("");
+    //    txtNombreReal.setText("");
+   //     txtCorreo.setText("");
+     //   txtTelefono.setText("");
+    //    txtDireccion.setText("");
         
     }
     public void habilitarBotones()
@@ -599,15 +512,10 @@ int codigoAplicacion=10;
     private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel label1;
-    private javax.swing.JLabel label10;
-    private javax.swing.JLabel label11;
-    private javax.swing.JLabel label13;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel label4;
     private javax.swing.JLabel label5;
-    private javax.swing.JLabel label6;
     private javax.swing.JLabel label7;
-    private javax.swing.JLabel label8;
     private javax.swing.JLabel label9;
     private javax.swing.JLabel lb;
     private javax.swing.JLabel lb2;
@@ -615,13 +523,8 @@ int codigoAplicacion=10;
     private javax.swing.JTable tablaUsuarios;
     private javax.swing.JTextField txtConfContraseña;
     private javax.swing.JTextField txtContrasena;
-    private javax.swing.JTextField txtCorreo;
-    private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtEstatus;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtNombreReal;
-    private javax.swing.JTextField txtTelefono;
-    private javax.swing.JTextField txtUltimaSesion;
     private javax.swing.JTextField txtbuscado;
     // End of variables declaration//GEN-END:variables
 }
