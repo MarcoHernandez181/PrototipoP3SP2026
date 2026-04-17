@@ -1,4 +1,3 @@
-Vista\MdiSeguridad$14.class
 Vista\frmMantenimientoUsuario$4.class
 Vista\frmRestablecerContraseña$2.class
 Vista\frmProcesoAplicacionPerfil$1.class
@@ -37,7 +36,6 @@ Vista\MdiSeguridad$1.class
 Vista\frmRestablecerContraseña.class
 Vista\frmMantenimientoUsuario$2.class
 Vista\frmProcesoAplicacionPerfil$10.class
-Vista\MdiSeguridad$13.class
 Vista\frmMantenimientoBitacora.class
 Vista\frmProcesoAplicacionUsuario$5.class
 Vista\frmMantenimientoBitacora$4.class
@@ -45,7 +43,6 @@ Vista\frmRestablecerContraseña$1.class
 Modelo\AsignacionPerfilUsuarioDAO.class
 Vista\frmMantenimientoUsuario$1.class
 Vista\MdiSeguridad$7.class
-Vista\MdiSeguridad$12.class
 Modelo\BitacoraDAO.class
 Vista\frmMantenimientoPerfil$4.class
 Vista\frmMantenimientoUsuario$8.class
@@ -102,7 +99,6 @@ Controlador\clsAsignacionPerfilUsuario.class
 Vista\frmMantenimientoPerfil$1.class
 Vista\frmProcesoAplicacionUsuario$12.class
 Vista\frmProcesoPerfilUsuario$5.class
-Vista\MdiSeguridad$15.class
 Modelo\AsignacionAplicacionUsuarioDAO.class
 Vista\frmProcesoAplicacionPerfil$7.class
 Vista\frmLogin$3.class

@@ -84,8 +84,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
         jButton2 = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         label4 = new javax.swing.JLabel();
-        txtUltimaSesion = new javax.swing.JTextField();
-        label6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaAplicaciones = new javax.swing.JTable();
         txtNombreReal = new javax.swing.JTextField();
@@ -93,7 +91,7 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         label8.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label8.setText("Nombre Apli");
+        label8.setText("Nombre facultad");
 
         label9.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         label9.setText("Estatus");
@@ -145,7 +143,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
         txtCodigo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         txtCodigo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
 
-        lb.setForeground(new java.awt.Color(204, 204, 204));
         lb.setText(".");
 
         btnActualizar.setText("Actualizar");
@@ -171,12 +168,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
 
         label4.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         label4.setText("ID a buscar");
-
-        txtUltimaSesion.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        txtUltimaSesion.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
-
-        label6.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label6.setText("Ultima Sesion");
 
         tablaAplicaciones.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         tablaAplicaciones.setModel(new javax.swing.table.DefaultTableModel(
@@ -217,10 +208,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
                                 .addGap(52, 52, 52)
                                 .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(label6)
-                                .addGap(29, 29, 29)
-                                .addComponent(txtUltimaSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(label9)
                                     .addComponent(label8))
@@ -256,7 +243,7 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
                     .addComponent(label1)
                     .addComponent(btnActualizar)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 37, Short.MAX_VALUE))
+                .addGap(0, 34, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -270,11 +257,7 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(label3)
                             .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(label6)
-                            .addComponent(txtUltimaSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(label9)
                             .addComponent(txtEstatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -431,7 +414,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel label4;
-    private javax.swing.JLabel label6;
     private javax.swing.JLabel label8;
     private javax.swing.JLabel label9;
     private javax.swing.JLabel lb;
@@ -439,7 +421,6 @@ public class frmMantenimientoAplicaciones extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtCodigo;
     private javax.swing.JTextField txtEstatus;
     private javax.swing.JTextField txtNombreReal;
-    private javax.swing.JTextField txtUltimaSesion;
     private javax.swing.JTextField txtbuscado;
     // End of variables declaration//GEN-END:variables
 }
