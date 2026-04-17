@@ -1,0 +1,50 @@
+commit f530c883dbf6961704c6ea2495e1622da869a8ec
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 13:46:43 2026 -0600
+
+    ventana login
+
+commit 48689cb0c1d3f89981debb93fb4629960de53329
+Merge: 6ac1d2e 73a253a
+Author: MarcoHernandez181 <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 13:40:42 2026 -0600
+
+    Merge pull request #1 from MarcoHernandez181/ramaMantenimiento9959246201
+    
+    comentario
+
+commit 73a253ae2a66958ce2bfe4fca68f7291856d50d8
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 13:39:19 2026 -0600
+
+    comentario
+
+commit 6ac1d2e2f26f8b502236c5c32ec21c05d685ae09
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 13:33:34 2026 -0600
+
+    Manteniomiento ventana
+
+commit 21081a07b31897125c392eb55a455eaa5c337ade
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 13:26:56 2026 -0600
+
+    Mantenimiento
+
+commit 127572aa4f17b567c5f6ccadf050ffca20faf52b
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 12:44:30 2026 -0600
+
+    Cambios basicos examen
+
+commit 708f64c695a45543d3109dc9a5fec3254b954ef8
+Author: Marco Hernandez <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 12:41:57 2026 -0600
+
+    Agregué programa base
+
+commit 45a78c743c4d63a535c3057ee8474545d2fc9f63
+Author: MarcoHernandez181 <mhernandezt23@miumg.edu.gt>
+Date:   Fri Apr 17 12:27:38 2026 -0600
+
+    Initial commit
